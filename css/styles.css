@@ -14,7 +14,21 @@ body {
 .row { margin: 0; padding: 0 }
 
 h1 {
-  font-size:45px; 
+  font-size:45px;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 5px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position:absolute;;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 img.grayscale {
@@ -60,11 +74,11 @@ img.grayscale {
 }
 
 .navbar-bold.affix {
-  background-color:#33ee67;
+  background-color:#e03500;
 }
 
 .navbar-bold {
-  background-color:#11cc45;
+  background-color:#e03500;
   font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
@@ -93,9 +107,14 @@ img.grayscale {
   font-size:25px;
 }
 
+.header .pencil {
+  color:#eeeeee;
+  font-size:15px;
+}
+
 .header {
   height: 80%;
-  background: #11cc45 url('http://www.bootply.com/assets/example/pt_squares_lg.png') repeat center center fixed;
+  background: #e03500 url('http://www.bootply.com/assets/example/pt_squares_lg.png') repeat center center fixed;
 }
 
 .blurb {
@@ -108,7 +127,7 @@ img.grayscale {
 }
 
 .bright {
-  background: #7fbbda url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed; 
+  background: #7fbbda url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed;
   color:#fff;
 }
 
@@ -130,7 +149,7 @@ img.grayscale {
   width: 140px;
   height: 140px;
   line-height: 136px;
-  vertical-align: middle; 
+  vertical-align: middle;
   text-align: center;
 }
 
@@ -143,7 +162,7 @@ img.grayscale {
   padding-top:7%;
   height: 100%;
   width: 100%;
-  background: url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed; 
+  background: url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
