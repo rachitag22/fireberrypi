@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>FireBerryPi</title>
+		<title>FireBerry Pi</title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -15,32 +15,22 @@
 	</head>
 	<body>
 
-<div class="navbar navbar-fixed-top navbar-bold" data-spy="affix" data-offset-top="1000">
-  <div class="container">
-    <div class="navbar-header">
-      <a href="#" class="navbar-brand">Home</a>
-      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-    </div>
-    <div class="navbar-collapse collapse" id="navbar">
-      <ul class="nav navbar-nav">
-        <li><a href="#sec1">Section 1</a></li>
-        <li><a href="#sec2">Section 2</a></li>
-      </ul>
-    </div>
-   </div>
-</div>
-
 <div class="header vert">
-  <div class="container">
-    
+	<div class="container">
+  <div class="col-md-6">
     <h1>FireberryPi</h1>
-      <p class="lead">Identify and Fix Gas Leaks Immediately!</p>
+      <p class="lead">Get Notified of Gas Leaks in Your Home</p>
+			<br> <br> <br>
+			<p class="pencil">Made by Glenn Renn, Vineet Shah, Rachit Agarwal, and Sharvil Parekh</p>
+	  	<a href="https://github.com/rachitag22/fireberrypi" class="btn btn-default btn-lg">Web App Github</a>
+			<a href="https://github.com/shahvineet98/fireberrypi_python" class="btn btn-default btn-lg">Python Github</a>
       <div>&nbsp;</div>
   </div>
+	<div class="col-md-6">
+		<br> <br> <br>
+		<iframe width=400px height=300 src="https://www.youtube.com/embed/TgUQCSk3nUE" frameborder="0" allowfullscreen></iframe>
+	</div>
+</div>
 </div>
 
 <div id="sec1" class="blurb">
@@ -56,33 +46,28 @@
 
 <div class="featurette" id="sec2">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1>Documentation</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2 text-center">
-        <div class="featurette-item">
-	  <a href="https://github.com/rachitag22/fireberrypi" class="btn btn-default btn-lg">Webpage Github</a>
-        
-        </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <div class="featurette-item">
-          <a href="https://github.com/shahvineet98/fireberrypi_python" class="btn btn-default btn-lg">Python Github</a>
-        </div>
-      </div>
+			<h3> What is Fireberry Pi? </h3>
+  		<p>Did you know	about 500 deaths occur every year due to gas leaks? We
+			came to Bitcamp and created Fireberry Pi to combat this. The foundation
+			of our project is a Raspberry Pi 3 and an Arduino Uno. The
+			Uno is used as a micro controller which manages the input from our gas/smoke
+			sensor. The Rasperry Pi is what connects all of our hardware to the web.</p>
+			<h3>How does Fireberry Pi work? </h3>
+  		<p>When the Uno detects a spike in gas levels, a series of commands are
+				 executed. First, the Pi's camera is triggered and a text alert is sent out.
+			 	 The user is able to take a look at the picture to assess any damages if
+			   they are not at home. Secondly, a database is updated and location data
+			 	 of smartphones associated with the system are pulled and mapped. This would
+			 	 allow the user to be aware of anyone who may be at in danger at home.</p>
+			<h3>What are our future plans? </h3>
+	   	<p>At Bitcamp, we only had access to an MQ-4 gas sensor which limited us to
+				 only detecting methane and butane (Which is what was used in our demo). We plan on adding
+			   a variety of sensors to the Uno such as an MQ-2 sensor which would focus on
+			 	 smoke. Also, we would like to create an enclosure which would allow for easy mounting
+			 	 of the system around a house.</p>
     </div>
   </div>
 </div>
-
-<ul class="nav pull-right scroll-down">
-  <li><a href="#" title="Scroll down"><i class="icon-chevron-down icon-3x"></i></a></li>
-</ul>
-<ul class="nav pull-right scroll-top">
-  <li><a href="#" title="Scroll to top"><i class="icon-chevron-up icon-3x"></i></a></li>
-</ul>
 
 	<!-- script references -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
